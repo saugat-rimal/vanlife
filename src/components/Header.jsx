@@ -12,7 +12,7 @@ const Header = () => {
                 <nav>
                     <Link to='/about'>About</Link>
                     <Link to='/vans'>Vans</Link>
-                    <Link className='login' to='/'><BsPersonCircle fontSize={24} /></Link>
+                    <Link aria-label="My Account" className='login' to='/'><BsPersonCircle fontSize={24} /></Link>
                 </nav>
 
             </div>
