@@ -31,8 +31,7 @@ to change how empty grid tracks are handled */
 
 .grid[data-layout="van-items"] {
     --gutter: var(--space-m-l);
-    --grid-min-item-size: clamp(16rem, 50vw, 23rem);
-
+    --grid-min-item-size: clamp(13rem, 35vw, 23rem);
     --flow-space: var(--space-2xs-xs);
 
 }

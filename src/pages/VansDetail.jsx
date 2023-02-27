@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link, useNavigate, useParams } from 'react-router-dom'
+import { GiSurferVan } from 'react-icons/gi'
 
 const VansDetail = () => {
+    const navigate = useNavigate();
+
     const params = useParams()
     const [van, setVan] = useState(null)
 
@@ -10,8 +13,6 @@ const VansDetail = () => {
             .then(res => res.json())
             .then(data => setVan(data.vans))
     }, [params.id])
-
-    console.log(van)
 
 
 
@@ -45,6 +46,14 @@ const VansDetail = () => {
                                     <p><strong>Price: </strong> ${van.price}/day</p>
                                     <em className="vansType">{van.type}</em>
                                 </span>
+
+                                <button className='secondary_button flex'
+                                    aria-label='find your van button'
+                                    onClick={() => navigate(`/vans/${van.id}/book`)}
+                                >
+                                    Rent this van
+                                    <GiSurferVan color='#CDA274' />
+                                </button>
                             </div>
                         </div>
                     </article>
