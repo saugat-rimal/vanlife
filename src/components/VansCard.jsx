@@ -20,7 +20,7 @@ const VansCard = () => {
                         <div className="simple" key={van.id}>
                             <Link to={`/vans/${van.id}`} className='flow' aria-label='van item'>
                                 <img src={van.imageUrl} alt="van on rent " className='imageBox br-tl' />
-                                <i className="vansType">{van.type}</i>
+                                <em className="vansType">{van.type}</em>
                                 <h3>{van.name}</h3>
                                 <p><strong>${van.price}</strong>/day </p>
 
