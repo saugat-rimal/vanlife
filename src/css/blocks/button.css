@@ -31,8 +31,10 @@
 
     transition: 0.2s ease-in-out;
     cursor: pointer;
+
 }
 
 .primary_button:hover {
     background-color: var(--color-dark-glare);
+
 }

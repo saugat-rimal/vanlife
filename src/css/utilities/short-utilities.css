@@ -6,7 +6,7 @@
     text-align: center;
 }
 
-.width_unset {
+.width_unset>* {
     max-width: unset;
 }
 

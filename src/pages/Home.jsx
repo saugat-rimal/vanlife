@@ -20,9 +20,9 @@ const HomePage = () => {
             </ section>
 
             <article className='region' aria-label='what we do'>
-                <div className='wrapper grid text-center' data-layout="what_we_do">
+                <div className='wrapper grid text-center ' data-layout="what_we_do">
 
-                    <div className='flow'>
+                    <div className='flow width_unset'>
                         <h2 className='h3'>What is #vanlife</h2>
 
                         <p>Vanlife is a lifestyle that involves living in a van, truck, or other vehicle. </p>
@@ -33,7 +33,7 @@ const HomePage = () => {
                         </button>
                     </div>
 
-                    <div className='flow'>
+                    <div className='flow width_unset'>
                         <h2 className='h3'>What is #vanlife</h2>
 
                         <p>Vanlife is a lifestyle that involves living in a van, truck, or other vehicle. </p>
@@ -44,7 +44,7 @@ const HomePage = () => {
                         </button>
                     </div>
 
-                    <div className='flow'>
+                    <div className='flow width_unset'>
                         <h2 className='h3'>What is #vanlife</h2>
 
                         <p>Vanlife is a lifestyle that involves living in a van, truck, or other vehicle. </p>
@@ -80,9 +80,9 @@ const HomePage = () => {
             <section className='region'>
                 <div className='wrapper flow '>
 
-                    <div className='flow text-center '>
-                        <h2>Explore Our Vans </h2>
-                        <p>Don’t squeeze in a sedan when you could relax in a van.</p>
+                    <div className='flow text-center width_unset'>
+                        <h2 >Explore Our Vans </h2>
+                        <p >Don’t squeeze in a sedan when you could relax in a van.</p>
                     </div>
 
                     <div className='grid  mt-l-xl' data-layout="van-items">
