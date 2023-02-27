@@ -1,7 +1,5 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 import { BsPersonCircle } from 'react-icons/bs'
-
 
 const Header = () => {
     return (
@@ -12,14 +10,15 @@ const Header = () => {
                 <p><Link to='/'>Vanlife</Link></p>
 
                 <nav>
-                    <span><Link href='/'>About</Link></span>
-                    <span><Link href='/'>Vans</Link></span>
-                    <span><Link href='/'>Blog</Link></span>
-                    <span><Link href='/'>Contact</Link></span>
-                    <span className='login'><Link href='/'><BsPersonCircle fontSize={24} /></Link></span>
+                    <Link to='/about'>About</Link>
+                    <Link to='/vans'>Vans</Link>
+                    <Link className='login' to='/'><BsPersonCircle fontSize={24} /></Link>
                 </nav>
 
             </div>
+
+
+
 
         </header>
     )

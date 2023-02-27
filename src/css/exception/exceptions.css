@@ -1,0 +1,8 @@
+.vansType {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    padding: var(--space-3xs) var(--space-s);
+    border-radius: var(--space-3xs);
+
+    margin-inline: var(--space-2xs);
+}

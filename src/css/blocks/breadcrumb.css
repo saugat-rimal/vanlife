@@ -1,0 +1,12 @@
+.breadcrumb {
+    margin-inline: auto;
+    background: var(--color-light);
+    color: var(--color-dark);
+    width: fit-content;
+
+    padding-block: var(--space-m);
+    padding-inline: var(--space-l-2xl);
+
+    border-radius: var(--border-radius);
+    margin-bottom: -20vw;
+}

@@ -112,6 +112,16 @@ main:focus {
     overflow: visible;
 }
 
+/* Base blockquote */
+.blockquote::before {
+    content: "“";
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 0.5;
+    margin-right: 0.5em;
+    vertical-align: -0.4em;
+    color: var(--color-primary);
+}
 
 
 /* Dark Mode  */

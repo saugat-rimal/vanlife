@@ -11,5 +11,4 @@
     padding-inline: var(--wrapper-gutter, var(--gutter));
     position: relative;
 
-    /* border: 1px solid red; */
 }

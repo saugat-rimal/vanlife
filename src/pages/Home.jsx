@@ -1,11 +1,13 @@
-import React from 'react'
 import { HiOutlineArrowRight } from 'react-icons/hi'
-import { Link } from 'react-router-dom'
+import VansCard from '../components/VansCard'
 
 const HomePage = () => {
+
+
     return (
         <main id='main'>
 
+            {/* hero section  */}
             < section className='hero wrapper' aria-label='hero container' >
 
                 <div className='wrapper region flow hero__inner' >
@@ -19,6 +21,7 @@ const HomePage = () => {
 
             </ section>
 
+            {/* what we do section  */}
             <article className='region' aria-label='what we do'>
                 <div className='wrapper grid text-center ' data-layout="what_we_do">
 
@@ -60,7 +63,7 @@ const HomePage = () => {
 
             </article>
 
-
+            {/* about vans life section  */}
             <article>
                 <div className='wrapper grid align-center' data-layout="50-50">
 
@@ -77,6 +80,7 @@ const HomePage = () => {
 
             </article>
 
+            {/* vans lists section  */}
             <section className='region'>
                 <div className='wrapper flow '>
 
@@ -85,16 +89,8 @@ const HomePage = () => {
                         <p >Don’t squeeze in a sedan when you could relax in a van.</p>
                     </div>
 
-                    <div className='grid  mt-l-xl' data-layout="van-items">
-
-                        <div>
-                            <Link to='/van/1' className='flow' aria-label='van item'>
-                                <img src="/van1.png" alt="van on rent " className='imageBox br-tl' />
-                                <h3>Modest Explorer</h3>
-                                <p><strong>$60</strong>/day </p>
-                            </Link>
-                        </div>
-
+                    <div className=' mt-l-xl' >
+                        <VansCard />
                     </div>
 
                 </div>
