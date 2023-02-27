@@ -7,6 +7,7 @@ const VansPage = () => {
 
 
     return (
+
         <main id='main'>
             < section className='hero wrapper' aria-label='hero container' >
                 <div className=' region flow hero__inner ' >
@@ -28,7 +29,15 @@ const VansPage = () => {
 
 
                     <div className=' mt-l-xl ' data-layout="van-items">
-                        <VansCard />
+                        {/* make loadning before vancard  */}
+                        {<VansCard /> ? (
+                            <VansCard />
+                        ) : (
+                            <div className='region wrapper text-center width_unset'>
+                                <h2> Loading... </h2>
+                            </div>
+                        )}
+
 
                     </div>
 
@@ -39,6 +48,7 @@ const VansPage = () => {
 
 
         </main>
+
     )
 }
 
