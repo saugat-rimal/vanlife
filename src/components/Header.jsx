@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { BsPersonCircle } from 'react-icons/bs'
 
 
 const Header = () => {
@@ -12,11 +13,10 @@ const Header = () => {
 
                 <nav>
                     <span><Link href='/'>About</Link></span>
-                    <span><Link href='/'>Contact</Link></span>
-                    <span><Link href='/'>Blog</Link></span>
-                    <span><Link href='/'>FAQ</Link></span>
-                    <span><Link href='/'>Login</Link></span>
                     <span><Link href='/'>Vans</Link></span>
+                    <span><Link href='/'>Blog</Link></span>
+                    <span><Link href='/'>Contact</Link></span>
+                    <span className='login'><Link href='/'><BsPersonCircle fontSize={24} /></Link></span>
                 </nav>
 
             </div>
