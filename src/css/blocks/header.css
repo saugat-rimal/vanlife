@@ -1,0 +1,24 @@
+.header {
+    --region-space: var(--space-s-m);
+
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: var(--space-s);
+}
+
+.header__inner>p {
+    font-family: var(--font-serif);
+    font-size: var(--space-s-m);
+
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-s);
+
+}

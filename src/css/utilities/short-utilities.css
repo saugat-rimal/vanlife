@@ -1,0 +1,19 @@
+.mt-l-xl {
+    margin-block-start: var(--space-l-xl);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.width_unset {
+    max-width: unset;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.h3 {
+    font-size: var(--step-2);
+}

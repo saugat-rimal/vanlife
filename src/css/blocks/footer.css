@@ -1,0 +1,4 @@
+.footer {
+    --region-space: var(--space-s-m);
+    text-align: center;
+}

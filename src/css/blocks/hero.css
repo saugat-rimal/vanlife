@@ -1,0 +1,23 @@
+.hero {
+    --wrapper-gutter: var(--gutter);
+}
+
+.hero__inner {
+    background: linear-gradient(0deg, hsla(143, 30%, 29%, 0.46), hsla(199, 95%, 38%, 0.46)), url("../../assets/homepage-hero-banner.png");
+
+    border-radius: var(--space-m-l);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* Light Mode  */
+
+@media (prefers-color-scheme: light) {
+
+    .hero {
+        color: var(--color-light);
+    }
+}

@@ -1,0 +1,38 @@
+.skeleton_button {
+    font-weight: 600;
+    font-size: var(--step-0);
+    border: none;
+    padding: var(--space-2xs) var(--space-m);
+    border-radius: var(--border-radius);
+
+
+
+    margin-inline: auto;
+
+    display: flex;
+    gap: var(--space-xs);
+    align-items: center;
+
+    cursor: pointer;
+}
+
+
+.primary_button {
+    padding: var(--space-s) var(--space-m);
+    background-color: var(--color-dark);
+
+    border-radius: var(--border-radius);
+    border: none;
+    color: var(--color-light);
+
+    display: flex;
+    gap: var(--space-xs);
+    align-items: center;
+
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.primary_button:hover {
+    background-color: var(--color-dark-glare);
+}

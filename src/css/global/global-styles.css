@@ -1,0 +1,131 @@
+/* 
+  Global styles 
+  Low-specificity, global styles that apply to the whole 
+  project: https://cube.fyi/css.html
+*/
+
+body {
+    font-family: var(--font-jost);
+    font-size: var(--step-1);
+    line-height: 1.4;
+    font-weight: 400;
+
+
+    color-scheme: dark light;
+    color: var(--color-dark);
+    background-color: var(--color-light);
+}
+
+/* Base typesetting */
+
+h1,
+h2,
+h3 {
+    line-height: 1;
+    font-family: var(--font-serif);
+
+}
+
+h1 {
+    font-size: var(--step-4);
+}
+
+h2 {
+    font-size: var(--step-3);
+}
+
+h3 {
+    font-size: var(--step-2);
+}
+
+/* Set line lengths */
+
+/* p,
+li,
+blockquote:not([class]) {
+    max-width: 50ch;
+}
+
+h1,
+h2,
+h3 {
+    max-width: 30ch;
+} */
+
+
+/* Base interactive elements */
+
+a {
+    text-decoration: none;
+    color: currentcolor;
+
+}
+
+a:hover,
+a:focus,
+a::selection {
+    text-decoration: underline;
+    text-decoration-color: currentColor;
+
+    /* adds padding in between lines */
+    text-underline-offset: var(--space-3xs);
+}
+
+:focus {
+    outline: 2px solid;
+    outline-offset: 0.3ch;
+    transition: 0.2s ease-in-out;
+
+}
+
+:target {
+    scroll-margin-top: 2ex;
+}
+
+main:focus {
+    outline: none;
+}
+
+
+/* Base lists */
+::selection {
+    color: var(--color-light);
+    background-color: var(--color-primary);
+}
+
+#skip-to-content {
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
+
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+#skip-to-content:focus {
+    top: 0;
+    left: 25vw;
+
+    width: auto;
+    height: auto;
+    overflow: visible;
+}
+
+
+
+/* Dark Mode  */
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: var(--color-light);
+        background-color: var(--color-dark);
+    }
+
+    ::selection {
+        color: var(--color-primary);
+        background-color: var(--color-light);
+    }
+
+
+}
