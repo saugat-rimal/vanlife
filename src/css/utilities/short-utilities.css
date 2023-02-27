@@ -21,3 +21,10 @@
 .place-center {
     place-items: center;
 }
+
+.flex {
+    display: flex;
+    align-items: center;
+    gap: var(--gutter, var(--space-s-l));
+
+}
