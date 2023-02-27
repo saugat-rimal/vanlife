@@ -1,8 +1,9 @@
 import { HiOutlineArrowRight } from 'react-icons/hi'
+import { useNavigate } from "react-router-dom";
 import VansCard from '../components/VansCard'
 
 const HomePage = () => {
-
+    const navigate = useNavigate();
 
     return (
         <main id='main'>
@@ -13,7 +14,10 @@ const HomePage = () => {
                 <div className='wrapper region flow hero__inner' >
                     <h1>You got the travel plans, we got the travel vans.</h1>
                     <p>Add adventure to your life by joining the #vanlife movement. Rent the perfect van to make your perfect road trip.</p>
-                    <button className='primary_button'>
+                    <button className='primary_button flex'
+                        aria-label='find your van button'
+                        onClick={() => navigate("/vans")}
+                    >
                         Find Your Van
                         <HiOutlineArrowRight color='#CDA274' />
                     </button>

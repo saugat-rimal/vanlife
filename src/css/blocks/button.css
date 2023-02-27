@@ -25,13 +25,14 @@
     border: none;
     color: var(--color-light);
 
-    display: flex;
-    gap: var(--space-xs);
-    align-items: center;
+    --gutter: var(--space-xs);
 
     transition: 0.2s ease-in-out;
     cursor: pointer;
+}
 
+.primary_button>a {
+    text-decoration: none;
 }
 
 .primary_button:hover {
