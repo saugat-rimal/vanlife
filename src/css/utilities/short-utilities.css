@@ -28,3 +28,7 @@
     gap: var(--gutter, var(--space-s-l));
 
 }
+
+.margin_auto {
+    margin-inline: auto;
+}

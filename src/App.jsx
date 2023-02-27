@@ -6,6 +6,9 @@ import Home from "./pages/Home"
 import VansPage from "./pages/Vans"
 import VansDetail from "./pages/VansDetail"
 
+import PageNotFound from './pages/PageNotFound';
+
+
 function App() {
 
   return (
@@ -16,6 +19,8 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/vans" element={<VansPage />} />
         <Route path="/vans/:id" element={<VansDetail />} />
+
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Footer />
     </BrowserRouter>
