@@ -27,17 +27,8 @@ const VansPage = () => {
                         <h2 >Explore Our Vans </h2>
                     </div>
 
-
                     <div className=' mt-l-xl ' data-layout="van-items">
-                        {/* make loadning before vancard  */}
-                        {<VansCard /> ? (
-                            <VansCard />
-                        ) : (
-                            <div className='region wrapper text-center width_unset'>
-                                <h2> Loading... </h2>
-                            </div>
-                        )}
-
+                        <VansCard />
 
                     </div>
 
