@@ -36,3 +36,7 @@
 .margin-block_auto {
     margin-block: auto;
 }
+
+.margin_block_top {
+    margin-block-start: auto;
+}
