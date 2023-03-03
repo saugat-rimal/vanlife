@@ -11,8 +11,13 @@ ideally, as a minimum.
 --grid-placement (auto-fill): Set either auto-fit or auto-fill
 to change how empty grid tracks are handled */
 
+* {
+
+    box-sizing: border-box;
+    background: rgb(0, 100, 0/ 0.1) !important;
+}
+
 .grid {
-    display: grid;
     display: grid;
     grid-template-columns: repeat(var(--grid-placement, auto-fill),
             minmax(var(--grid-min-item-size, 20rem), 1fr));
@@ -33,5 +38,4 @@ to change how empty grid tracks are handled */
     --gutter: var(--space-m-l);
     --grid-min-item-size: clamp(13rem, 35vw, 23rem);
     --flow-space: var(--space-2xs-xs);
-
 }

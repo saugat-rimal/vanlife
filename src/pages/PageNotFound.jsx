@@ -6,10 +6,10 @@ const PageNotFound = () => {
     const navigate = useNavigate();
 
     return (
-        <div className='region flow wrapper text-center width_unset '>
+        <div className='region flow wrapper text-center width_unset margin-block_auto'>
             <h1>404 Page Not Found</h1>
             <p>Sorry, the page you are looking for does not exist.</p>
-            <button className='secondary_button flex margin_auto'
+            <button className='secondary_button flex margin-inline_auto'
                 aria-label='find your van button'
                 onClick={() => navigate(`/`)}
             >

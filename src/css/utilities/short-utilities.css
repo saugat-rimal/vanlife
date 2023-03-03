@@ -29,6 +29,10 @@
 
 }
 
-.margin_auto {
+.margin-inline_auto {
     margin-inline: auto;
+}
+
+.margin-block_auto {
+    margin-block: auto;
 }

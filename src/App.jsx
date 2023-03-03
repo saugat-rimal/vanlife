@@ -13,16 +13,19 @@ function App() {
 
   return (
     <BrowserRouter>
+
       <Header />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/vans" element={<VansPage />} />
         <Route path="/vans/:id" element={<VansDetail />} />
-
         <Route path="*" element={<PageNotFound />} />
       </Routes>
+
       <Footer />
+
     </BrowserRouter>
   )
 }
